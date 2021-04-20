@@ -15,6 +15,7 @@ WORKDIR /backend
 COPY ./backend/Gemfile /backend
 COPY ./backend/Gemfile.lock /backend
 
+ENV BUNDLER_VERSION=2.2.16
 RUN gem install bundler:2.2.16
 RUN bundle install
 
